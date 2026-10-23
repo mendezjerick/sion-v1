@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "world": "boxed reference manual with transparent acetate sheets",
+  "mode": "operate",
+  "tokens": {
+    "color": {
+      "void": "#05080C",
+      "shell": "#080D13",
+      "rail": "#0B1219",
+      "panel": "#0F171E",
+      "panel2": "#121C24",
+      "ink": "#EEF6F8",
+      "inkDim": "#A0B0B7",
+      "inkFaint": "#65757E",
+      "cyan": "#57E8FF",
+      "cyanStrong": "#18C9E7",
+      "green": "#90E8AE",
+      "amber": "#F5C56A",
+      "red": "#FF7F83"
+    },
+    "type": {
+      "display": "Barlow Condensed",
+      "body": "Manrope",
+      "mono": "IBM Plex Mono"
+    },
+    "radius": {
+      "panel": "14px",
+      "control": "6px",
+      "output": "7px"
+    }
+  },
+  "signature": "stepped activity rail with a cyan acetate top edge",
+  "responsive": ["desktop rail + split workbench", "stacked brief at 1060px", "horizontal rail + one-column outputs at 720px"]
+}

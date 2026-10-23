@@ -1,0 +1,7 @@
+.impeccable/live/
+.impeccable/review/
+.impeccable/questions/
+node_modules/
+dist/
+*.pyc
+__pycache__/
