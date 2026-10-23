@@ -3,6 +3,7 @@
 .impeccable/questions/
 .sion-server.pid
 .sion-server/
+.venv/
 node_modules/
 dist/
 *.pyc

@@ -12,7 +12,11 @@ No package install is required. From this folder, run:
 
 Then open `http://127.0.0.1:4173`. To open it automatically, use `.\start.ps1 -OpenBrowser`. Stop the server with `.\stop.ps1`.
 
-The script looks for a working `py -3` or `python` command. If Python is installed in a custom location, pass it explicitly with `.\start.ps1 -PythonPath "C:\path\to\python.exe"`.
+On first run, the script creates `.venv` and installs the shared computer-vision dependencies from `requirements.txt` for PCA/variance, OpenCV/SURF, histogram, and segmentation workflows. Later starts reuse the environment. The browser upload controls work locally without sending files to a remote service.
+
+The script looks for a working `py -3` or `python` command. If Python is installed in a custom location, pass it explicitly with `.\start.ps1 -PythonPath "C:\path\to\python.exe"`. To open the browser-only workspace without installing dependencies, use `.\start.ps1 -SkipDependencies`.
+
+YOLOv11 requires the heavier Ultralytics/PyTorch stack. Install it when you need that lab with `.\start.ps1 -IncludeYolo`; the app still labels model-dependent results honestly until actual weights are loaded.
 
 If PowerShell blocks local scripts on a new machine, run the command in the current session first:
 
