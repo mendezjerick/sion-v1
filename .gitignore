@@ -1,6 +1,8 @@
 .impeccable/live/
 .impeccable/review/
 .impeccable/questions/
+.sion-server.pid
+.sion-server/
 node_modules/
 dist/
 *.pyc

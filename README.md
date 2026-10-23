@@ -4,13 +4,21 @@ Sion is a single Web UI for CSST106 Computer Vision laboratory activities 1 thro
 
 ## Run locally
 
-No package install is required. From this folder, start any static file server, for example:
+No package install is required. From this folder, run:
 
 ```powershell
-py -m http.server 4173
+.\start.ps1
 ```
 
-Then open `http://localhost:4173`.
+Then open `http://127.0.0.1:4173`. To open it automatically, use `.\start.ps1 -OpenBrowser`. Stop the server with `.\stop.ps1`.
+
+The script looks for a working `py -3` or `python` command. If Python is installed in a custom location, pass it explicitly with `.\start.ps1 -PythonPath "C:\path\to\python.exe"`.
+
+If PowerShell blocks local scripts on a new machine, run the command in the current session first:
+
+```powershell
+Set-ExecutionPolicy -Scope Process Bypass
+```
 
 ## Activities
 
